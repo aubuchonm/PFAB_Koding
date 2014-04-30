@@ -1,0 +1,24 @@
+#!/usr/local/bin/PythonDirectory
+import math
+first = "Mark"
+last = "AuBuchon"
+age = 56
+print first, last, age
+sideA = 12.55
+sideB = 17.85
+sideC = (sideA * sideA) + (sideB * sideB)
+value = math.sqrt(sideC);
+print sideC
+print value
+operand1 = 95
+operand2 = 64.5
+print operand1, "+", operand2, "=", operand1 + operand2
+print operand1, "-", operand2, "=", operand1 - operand2
+print operand1, "*", operand2, "=", operand1 * operand2
+print operand1, "/", operand2, "=", operand1 / operand2
+print operand1, "%", operand2, "=", operand1 % operand2
+
+#this implementation is best for example 16 since if any of the values for the
+#operands need to be changed I can modify the program in just one place to
+#accomodate that change (i.e. the value assigned to the affected operand)
+
