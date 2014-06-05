@@ -1,0 +1,23 @@
+gpas = {"Lassoff":3.12, "Johnson":2.22, "Reich":3.59, "Honeychurch":2.98,
+"Maini":3.11, "Levin":2.88, "Marcus":2.77, "Banks":3.71}
+
+print "Last Name: ",  gpas.keys()
+
+avg = 0
+for lname in gpas:
+	print "Last Name: ", lname, "   GPA: ", gpas[lname]
+	avg += gpas[lname]
+
+
+print "Average Class GPA: ", avg/len(gpas)
+
+ranking = sorted(gpas.values(), reverse=True)
+
+cnt = 0
+for rank in ranking:
+	for name, gpa in gpas.iteritems():
+		if gpa == rank:
+			cnt += 1
+			print "Rank: #", cnt, name
+		 
+ 

@@ -1,0 +1,21 @@
+Bradys = ['Mike','Carol','Marsha','Jan','Cindy','Greg','Peter','Bobby','Alice']
+
+print "The lenght of the list is: ", len(Bradys)
+numBradys = len(Bradys)
+
+while numBradys > 0 :
+	print Bradys[numBradys-1]
+	numBradys -= 1
+
+#Sorted
+Bradys.sort()
+print Bradys
+
+while numBradys < 9 :
+	print Bradys[numBradys]
+	numBradys += 1
+	
+for Brady in Bradys:
+	print "For Loop element: ", Brady
+
+
