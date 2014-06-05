@@ -1,0 +1,10 @@
+#!/usr/local/bin/PythonDirectory
+import sys
+
+cost = input("What is the cost of the item? ")
+tax = input("What is the sales tax rate (Expressed as 0.XX) ")
+
+fullcost = cost + (cost * tax)
+
+print "The full price of the item is $" , fullcost
+
